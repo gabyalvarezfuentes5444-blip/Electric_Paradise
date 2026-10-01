@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: Knewave;
+    src: url(/Users/gabrielaalvarez/Desktop/WEB/Electric_Paradise/TIPO/Chewy-Regular.ttf);
+}
+
+@font-face {
+    font-family: Chewy;
+    src: url(/Users/gabrielaalvarez/Desktop/WEB/Electric_Paradise/TIPO/Chewy-Regular.ttf);
+}
+
+:root {
+    --color-principal: #F9306A;
+    --color-selec: #D30540;
+    --color-fondo: #FFEFDE;
+    --color-segundo: #CFEDDE;
+    --color-tercer: #5EB6B4;
+    --tipo-accen: Knewave;
+    --tipo-texto: Chewy;
+}
+
+/* NAVBAR */
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 30px;
+}
+
+.ILOGO img {
+    width: 60px;
+    height: auto;
+    display: block;
+    transition: 0.3s;
+}
+
+.ILOGO:hover img {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    gap: 15rem;
+}
+
+
+nav a {
+    font-family: var(--tipo-accen);
+    color: var(--color-principal);
+    font-size: 1.25rem; /* 20px */
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--color-selec);
+}
