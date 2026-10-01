@@ -69,3 +69,14 @@ nav a {
 nav a:hover {
     color: var(--color-selec);
 }
+
+/* FONDO */
+
+.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
