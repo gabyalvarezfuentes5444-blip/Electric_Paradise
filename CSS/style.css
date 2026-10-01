@@ -80,3 +80,17 @@ nav a:hover {
     height: auto;
     z-index: -1;
 }
+
+/* HERO */
+
+.HERO {
+    padding: 8rem 1rem;
+}
+
+.HERO img {
+    display: block;
+    width: 40rem;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
