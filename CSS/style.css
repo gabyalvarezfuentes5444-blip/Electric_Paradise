@@ -93,4 +93,51 @@ nav a:hover {
     max-width: 100%;
     height: auto;
     margin: 0 auto;
+    transition: 0.3s;
 }
+
+.HERO img:hover {
+    transform: scale(1.1);
+}
+
+/* CARRUSEL */
+
+.carrusel {
+    overflow: hidden;
+    padding: 6rem 0;
+}
+
+.cinta {
+    display: flex;
+    width: max-content;
+    animation: girar 30s linear infinite;
+}
+
+.cinta img {
+    width: 22rem;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border-radius: 0.6rem;
+    margin-right: 3rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.cinta img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 1;
+}
+
+
+@keyframes girar {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
