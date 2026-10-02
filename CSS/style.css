@@ -140,4 +140,18 @@ nav a:hover {
     }
 }
 
+/* LINE-UP */
+
+.lineup {
+    padding: 4rem 2rem;
+}
+
+.titulo {
+    display: block;
+    width: 31rem;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 
