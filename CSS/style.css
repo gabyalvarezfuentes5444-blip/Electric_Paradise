@@ -154,4 +154,27 @@ nav a:hover {
     margin: 0 auto;
 }
 
+/* DETRAS DE CAMARA */
+
+.detras {
+    display: flex;
+    padding-top: 13rem;
+    justify-content: center;
+}
+
+.detras video {
+    width: 50rem;
+    border-radius: 1rem;
+    object-fit: cover;
+
+}
+
+.DetrasCamara {
+    padding-top: 5rem;
+}
+
+
+
+
+
 
