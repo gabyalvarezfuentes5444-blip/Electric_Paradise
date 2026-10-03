@@ -55,20 +55,22 @@ header {
 
 nav ul {
     display: flex;
-    gap: 15rem;
+    gap: 29rem;
 }
 
 
 nav a {
     font-family: var(--tipo-accen);
     color: var(--color-principal);
-    font-size: 1.25rem; /* 20px */
+    font-size: 2rem; 
     transition: 0.3s;
 }
 
 nav a:hover {
     color: var(--color-selec);
 }
+
+/* HOME */
 
 /* FONDO */
 
@@ -173,6 +175,18 @@ nav a:hover {
     padding-top: 5rem;
 }
 
+/* TIENDA */
+
+.degradado {
+    background: linear-gradient(
+    to bottom,
+    var(--color-fondo) 0%,
+    var(--color-segundo) 20%,
+    var(--color-tercer) 100%
+    );
+     min-height: 60rem;
+
+}
 
 
 
