@@ -43,6 +43,8 @@ header {
     background-color: var(--color-fondo);
     border-radius: 0.6rem;
     margin: 1rem;
+    position: relative;
+    z-index: 10;
 }
 
 .ILOGO img {
@@ -93,8 +95,16 @@ nav a:hover {
 
 /* HERO */
 
+
+/* logo */
 .HERO {
+    position: relative;
     padding: 8rem 1rem;
+}
+
+.HERO h1 {
+    position: relative;
+    z-index: 2;
 }
 
 .HERO img {
@@ -104,10 +114,30 @@ nav a:hover {
     height: auto;
     margin: 0 auto;
     transition: 0.3s;
+
 }
 
-.HERO img:hover {
+.HERO h1 img:hover {
     transform: scale(1.1);
+}
+
+/* palmeras */
+.HERO .palmera {
+    position: absolute;
+    top: 5rem;
+    width: 32%;
+    height: auto;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.izquierda {
+    left: 0;
+}
+
+.derecha {
+    right: 0;
+    transform: scaleX(-1);
 }
 
 /* CARRUSEL */
