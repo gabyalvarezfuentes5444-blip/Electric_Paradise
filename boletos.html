@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletos</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+        <!-- FONDO -->
+     <img class="fondo-boletos" src="MEDIA/IMG/Fondo_Electric_Paradise.webp" alt="">
+
+    <!-- NAVBAR -->
+    <header>
+        <!-- LOGO -->
+         <a class="ILOGO" href="index.html">
+            <img src="MEDIA/IMG/Isologo_E.P.webp" alt="Electric Paradise">
+         </a>
+
+         <nav>
+            <ul>
+                <li class="centro"><a href="tienda.html">Tienda</a></li>
+                <li><a href="#">Boletos</a></li>
+            </ul>
+         </nav>
+    </header>
+
+    <main>
+        <section class="boletos">
+            <!-- MAPA -->
+            <img class="mapa" src="MEDIA/IMG/mapa_E.P.webp" alt="Mapa del festival Electric Paradise">
+
+            <!-- COMPRA -->
+            <div class="compra">
+                <!-- FECHAS -->
+                <div class="fechas">
+                    <input type="radio" name="fecha" id="dia14" value="14">
+                    <label for="dia14">14 Dic</label>
+
+                    <input type="radio" name="fecha" id="dia15" value="15" checked>
+                    <label for="dia15">15 Dic</label>
+
+                    <input type="radio" name="fecha" id="dia16" value="16">
+                    <label for="dia16">16 Dic</label>
+                </div>
+
+                <!-- FORMULARIO -->
+                <form class="formulario" id="formulario">
+                    <div class="fila">
+                        <input type="text" id="nombre" placeholder="Nombre">
+                        <input type="text" id="apellido" placeholder="Apellido">
+                    </div>
+
+                    <input type="email" id="correo" placeholder="Correo electrónico">
+
+                    <div class="fila">
+                        <select class="tipo" id="tipo">
+                            <option value="150">General - 150$</option>
+                            <option value="300" selected>VIP - 300$</option>
+                            <option value="500">Backstage - 500$</option>
+                        </select>
+
+                        <select class="cantidad" id="cantidad">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <p class="total" id="total">0$</p>
+                </form>
+
+            </div>
+        </section>
+    </main>
+
+    
+</body>
+</html>
