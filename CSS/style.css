@@ -476,6 +476,25 @@ footer .palmera {
 
 /* BOLETOS */
 
+.boletos {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: 5rem 0rem;
+}
+
+.mapa {
+    width: 55%;
+    height: auto;
+    border-radius: 1rem;
+}
+
+.compra {
+    width: 45%;
+}
+
 .fondo-boletos {
     position: absolute;
     top: 0;
