@@ -58,13 +58,15 @@ header {
     transform: scale(1.1);
 }
 
-nav {
-    width: 55%;
-}
 
 nav ul {
     display: flex;
-    justify-content: space-between;
+}
+
+.centro {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 
