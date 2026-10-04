@@ -133,13 +133,37 @@ nav a:hover {
     z-index: 0;
 }
 
+/* .palmera{
+
+} */
+
 .izquierda {
-    left: 0;
+    left: -2rem;
+    animation: mecer-izq 2s ease-in-out infinite alternate;
 }
 
 .derecha {
-    right: 0;
+    right: -2rem;
     transform: scaleX(-1);
+    animation: mecer-der 2s ease-in-out infinite alternate;
+}
+
+@keyframes mecer-izq {
+    from {
+        transform: rotate(-2deg);
+    }
+    to {
+        transform: rotate(2deg);
+    }
+}
+
+@keyframes mecer-der {
+    from {
+        transform: scaleX(-1) rotate(-2deg);
+    }
+    to {
+        transform: scaleX(-1) rotate(2deg);
+    }
 }
 
 /* CARRUSEL */
@@ -324,6 +348,20 @@ footer .palmera {
 }
 
 /* TIENDA */
+
+/* HEADER */
+
+.header-tienda {
+    background-color: var(--color-principal);
+}
+
+.header-tienda nav a {
+    color: var(--color-fondo);
+}
+
+.header-tienda nav a:hover {
+    color: white;
+}
 
 .degradado {
     position: relative;
