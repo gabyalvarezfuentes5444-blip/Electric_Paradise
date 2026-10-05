@@ -22,7 +22,10 @@
 }
 
 body {
+    position: relative;
     background-color: var(--color-fondo);
+    display: flow-root;
+
 }
 
 /* NAVBAR */
@@ -91,7 +94,9 @@ nav a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
     z-index: -1;
 }
 
@@ -102,6 +107,7 @@ nav a:hover {
 .HERO {
     position: relative;
     padding: 8rem 1rem;
+    overflow-x: clip;
 }
 
 .HERO h1 {
@@ -230,9 +236,9 @@ nav a:hover {
 
 .detras video {
     width: 50rem;
+    max-width: 100%;
     border-radius: 1rem;
     object-fit: cover;
-
 }
 
 .DetrasCamara {
@@ -245,6 +251,7 @@ nav a:hover {
 .footer-p {
     position: relative;
     background-color: var(--color-fondo);
+    overflow-x: clip;
 }
 
 footer .palmera {
@@ -262,9 +269,9 @@ footer .palmera {
     justify-content: center;
     align-items: flex-start;
     gap: 5rem;
-    /* padding: 4rem 2rem; */
     padding-top: 4rem;
     padding-bottom: 2rem;
+    flex-wrap: wrap;
 }
 
 .footer-logo {
@@ -443,7 +450,7 @@ footer .palmera {
 .burbuja {
     position: absolute;
     height: auto;
-    z-index: 2;
+    z-index: 0;
     pointer-events: none;
     animation: latir 0.5s ease-in-out infinite alternate;
 }
@@ -614,5 +621,119 @@ footer .palmera {
 }
 
 
+/* RESPONSIVE */
+
+/* ===== CELULAR ===== */
+
+@media (max-width: 600px) {
+
+    /* PARA TODO */
+    header {
+        padding: 0.4rem 1rem;
+    }
+
+    .ILOGO img {
+        width: 2rem;
+    }
+
+    nav a {
+        font-size: 0.9rem;
+    }
+
+    /* HOME */
+    .HERO {
+        padding: 15rem 1rem 15rem;
+    }
+
+    .HERO h1 img {
+        width: 86%;
+    }
+
+    .HERO .palmera {
+        width: 40%;
+        padding-top: 9rem;
+    }
+
+    .HERO .derecha {
+        right: -1rem;
+    }
+
+    .HERO .izquierda {
+        left: -1rem;
+    }
+
+    .carrusel {
+        padding: 2rem 0 3rem;
+    }
+
+    .cinta img {
+        width: 16rem;
+        margin-right: 3rem;
+    }
+
+    .lineup {
+        padding: 2rem 1rem;
+    }
+
+    .titulo {
+        width: 60%;
+    }
+
+    .detras {
+        padding-top: 8rem;
+    }
+
+    .detras video {
+        width: 85%;
+    }
+
+    .DetrasCamara {
+        padding: 3rem 1rem;
+    }
+
+    footer .palmera {
+        width: 47%;
+    }
+
+    footer .izquierda {
+        left: -1rem;
+    }
+
+    footer .derecha {
+        right: -1rem;
+    }
+
+    /* TIENDA */
+
+    :root {
+        --espacio: 1.2rem;
+    }
+
+    .HERO-tienda {
+        padding: 14rem 1rem 14rem;
+    }
+
+    .HERO-tienda img {
+        width: 85%;
+    }
+
+    .degradado {
+        padding: 6rem 1rem 4rem;
+    }
+
+    .galeria {
+        padding-top: 2rem;
+    }
+
+    .grande { width: 3.5rem; }
+    .chica  { width: 2rem; }
+    .mini   { width: 1.5rem; }
+
+
+}
+
+/* * {
+    outline: 1px solid red;
+} */
 
 
