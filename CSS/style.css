@@ -8,9 +8,8 @@
 
 @font-face {
     font-family: Chewy;
-    src: url(/Users/gabrielaalvarez/Desktop/WEB/Electric_Paradise/TIPO/Chewy-Regular.ttf);
+    src: url(../TIPO/Chewy-Regular.ttf);
 }
-
 :root {
     --color-principal: #F9306A;
     --color-selec: #D30540;
@@ -495,7 +494,7 @@ footer .palmera {
     gap: 4rem;
     max-width: 70rem;
     margin: 0 auto;
-    padding: 5rem 0rem;
+    padding: 5rem 2rem;
 }
 
 .mapa {
@@ -760,6 +759,10 @@ footer .palmera {
 
     :root {
         --espacio: 1.2rem;
+    }
+
+    .header-tienda nav {
+        background-color: var(--color-principal);
     }
 
     .HERO-tienda {
