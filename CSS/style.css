@@ -599,6 +599,13 @@ footer .palmera {
     flex: 1;
 }
 
+.error {
+    text-align: center;
+    color: var(--color-selec);
+    font-family: var(--tipo-texto);
+    font-size: 0.9rem;
+}
+
 .total {
     text-align: center;
     color: var(--color-principal);
